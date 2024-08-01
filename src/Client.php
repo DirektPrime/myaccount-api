@@ -9,9 +9,7 @@ use RuntimeException;
 
 class Client
 {
-    const HOST_DEV = 'https://myaccount.systemportals.org';
-    const HOST_UAT = 'https://myaccount.systemportals.net';
-    const HOST_LIVE = 'https://myaccount.systemportals.com';
+    const HOST = 'https://myaccount.systemportals.com';
 
     protected string $host;
 
@@ -21,24 +19,9 @@ class Client
 
     public function __construct(array $options)
     {
-        $this->initHost($options);
+        $this->host = $options['host'] ?? self::HOST;
         $this->guzzle = new GuzzleClient();
         $this->login($options);
-    }
-
-    private function initHost(array $options): void
-    {
-        $env = strtolower($options['environment'] ?? 'live');
-
-        if ($env == 'dev') {
-            $this->host = static::HOST_DEV;
-        } elseif ($env == 'uat') {
-            $this->host = static::HOST_UAT;
-        } elseif ($env == 'live') {
-            $this->host = static::HOST_LIVE;
-        } else {
-            throw new RuntimeException('Invalid environment: ' . $env);
-        }
     }
 
     private function login(array $options): void

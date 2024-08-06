@@ -583,4 +583,37 @@ class Client
     {
         return $this->apiRequest('devex/trades', $params);
     }
+
+    /**
+     * Get the clients data.
+     *
+     * @param $params
+     * @return array|object
+     */
+    public function getClients($params = [])
+    {
+        return $this->apiRequest('clients', $params);
+    }
+
+    /**
+     * Get the platform users data.
+     *
+     * @param $params
+     * @return array|object
+     */
+    public function getPlatformUsers($params = [])
+    {
+        return $this->apiRequest('clients/users', $params);
+    }
+
+    /**
+     * Get the platform accounts data.
+     *
+     * @param $params
+     * @return array|object
+     */
+    public function getPlatformAccounts($params = [])
+    {
+        return $this->apiRequest('clients/accounts', $params);
+    }
 }

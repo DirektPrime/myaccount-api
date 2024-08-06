@@ -590,7 +590,7 @@ class Client
      * @param $params
      * @return array|object
      */
-    public function getClients($params = [])
+    public function clients($params = [])
     {
         return $this->apiRequest('clients', $params);
     }
@@ -601,7 +601,7 @@ class Client
      * @param $params
      * @return array|object
      */
-    public function getPlatformUsers($params = [])
+    public function platformUsers($params = [])
     {
         return $this->apiRequest('clients/users', $params);
     }
@@ -612,7 +612,7 @@ class Client
      * @param $params
      * @return array|object
      */
-    public function getPlatformAccounts($params = [])
+    public function platformAccounts($params = [])
     {
         return $this->apiRequest('clients/accounts', $params);
     }

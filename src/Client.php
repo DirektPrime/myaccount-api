@@ -92,7 +92,21 @@ class Client
     /**
      * Get Iress commissions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressCommissions($params = [])
@@ -103,7 +117,21 @@ class Client
     /**
      * Get Iress dividends data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressDividends($params = [])
@@ -114,7 +142,21 @@ class Client
     /**
      * Get Iress dividend tax data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressDividendTax($params = [])
@@ -125,7 +167,21 @@ class Client
     /**
      * Get Iress financing data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressFinancing($params = [])
@@ -136,7 +192,19 @@ class Client
     /**
      * Get Iress Greek tax data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressPGreekTax($params = [])
@@ -147,7 +215,19 @@ class Client
     /**
      * Get Iress interest data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressInterest($params = [])
@@ -158,7 +238,19 @@ class Client
     /**
      * Get Iress Italian tax data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressItalianTax($params = [])
@@ -169,7 +261,21 @@ class Client
     /**
      * Get Iress short borrowing data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressShortBorrowing($params = [])
@@ -180,7 +286,19 @@ class Client
     /**
      * Get Iress money flow data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressMoneyFlow($params = [])
@@ -191,7 +309,19 @@ class Client
     /**
      * Get Iress money flow totals data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from (required)</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to (required)</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressMoneyFlowTotals($params = [])
@@ -202,7 +332,19 @@ class Client
     /**
      * Get Iress money flow net data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressMoneyFlowNet($params = [])
@@ -213,7 +355,19 @@ class Client
     /**
      * Get Iress money flow net totals data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from (required)</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to (required)</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressMoneyFlowNetTotals($params = [])
@@ -222,86 +376,23 @@ class Client
     }
 
     /**
-     * Get Iress statement average positions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsAvgPositions($params = [])
-    {
-        return $this->apiRequest('iress/statements/avgpositions', $params);
-    }
-
-    /**
-     * Get Iress statement commissions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsCommissions($params = [])
-    {
-        return $this->apiRequest('iress/statements/commissions', $params);
-    }
-
-    /**
-     * Get Iress statement financing data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsFinancing($params = [])
-    {
-        return $this->apiRequest('iress/statements/financing', $params);
-    }
-
-    /**
-     * Get Iress statement positions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsPositions($params = [])
-    {
-        return $this->apiRequest('iress/statements/positions', $params);
-    }
-
-    /**
-     * Get Iress statement trades data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsTrades($params = [])
-    {
-        return $this->apiRequest('iress/statements/trades', $params);
-    }
-
-    /**
-     * Get Iress statement transactions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsTransactions($params = [])
-    {
-        return $this->apiRequest('iress/statements/transactions', $params);
-    }
-
-    /**
-     * Get Iress statement account balances totals data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function iressStatementsTotals($params = [])
-    {
-        return $this->apiRequest('iress/statements/totals', $params);
-    }
-
-    /**
      * Get Iress transactions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressTransactions($params = [])
@@ -312,7 +403,17 @@ class Client
     /**
      * Get Iress account balances data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>The balance date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressAccountBalances($params = [])
@@ -323,7 +424,19 @@ class Client
     /**
      * Get Iress average positions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>Include positions open on this date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressAvgPositions($params = [])
@@ -334,7 +447,17 @@ class Client
     /**
      * Get Iress net balances data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>The balance date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressNetBalances($params = [])
@@ -345,7 +468,19 @@ class Client
     /**
      * Get Iress positions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>Include positions open on this date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
      * @return array|object
      */
     public function iressPositions($params = [])
@@ -356,7 +491,25 @@ class Client
     /**
      * Get Iress trades data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     *     <dt>destinations</dt>
+     *     <dd>The destinations to include (array or comma separated string).</dd>
+     *     <dt>counterparties</dt>
+     *     <dd>The counterparties to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function iressTrades($params = [])
@@ -367,7 +520,21 @@ class Client
     /**
      * Get Devex commissions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexCommissions($params = [])
@@ -378,7 +545,21 @@ class Client
     /**
      * Get Devex financing data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexFinancing($params = [])
@@ -389,7 +570,19 @@ class Client
     /**
      * Get Devex interest data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexInterest($params = [])
@@ -400,7 +593,21 @@ class Client
     /**
      * Get Devex Italian tax data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexItalianTax($params = [])
@@ -411,7 +618,21 @@ class Client
     /**
      * Get Devex short borrowing data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexShortBorrowing($params = [])
@@ -422,7 +643,21 @@ class Client
     /**
      * Get Devex money flow data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>showZeroValued</dt>
+     *     <dd>Pass in 1 to include zero valued records or 0 (default) to exclude them.</dd>
+     * </dl>
      * @return array|object
      */
     public function devexMoneyFlow($params = [])
@@ -433,7 +668,19 @@ class Client
     /**
      * Get Devex money flow totals data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from (required)</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to (required)</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexMoneyFlowTotals($params = [])
@@ -442,97 +689,23 @@ class Client
     }
 
     /**
-     * Get Devex statement average positions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsAvgPositions($params = [])
-    {
-        return $this->apiRequest('devex/statements/avgpositions', $params);
-    }
-
-    /**
-     * Get Devex statement commissions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsCommissions($params = [])
-    {
-        return $this->apiRequest('devex/statements/commissions', $params);
-    }
-
-    /**
-     * Get Devex statement financing data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsFinancing($params = [])
-    {
-        return $this->apiRequest('devex/statements/financing', $params);
-    }
-
-    /**
-     * Get Devex statement positions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsPositions($params = [])
-    {
-        return $this->apiRequest('devex/statements/positions', $params);
-    }
-
-    /**
-     * Get Devex statement short borrowing data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsShortBorrowing($params = [])
-    {
-        return $this->apiRequest('devex/statements/shortborrowing', $params);
-    }
-
-    /**
-     * Get Devex statement trades data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsTrades($params = [])
-    {
-        return $this->apiRequest('devex/statements/trades', $params);
-    }
-
-    /**
-     * Get Devex statement transactions data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsTransactions($params = [])
-    {
-        return $this->apiRequest('devex/statements/transactions', $params);
-    }
-
-    /**
-     * Get Devex statement account balances totals data.
-     *
-     * @param $params
-     * @return array|object
-     */
-    public function devexStatementsTotals($params = [])
-    {
-        return $this->apiRequest('devex/statements/totals', $params);
-    }
-
-    /**
      * Get Devex transactions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>showZeroValued</dt>
+     *     <dd>Pass in 1 to include zero valued records or 0 (default) to exclude them.</dd>
+     * </dl>
      * @return array|object
      */
     public function devexTransactions($params = [])
@@ -543,7 +716,19 @@ class Client
     /**
      * Get Devex average positions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>Include positions open on this date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexAvgPositions($params = [])
@@ -554,7 +739,21 @@ class Client
     /**
      * Get Devex closed positions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexClosedPositions($params = [])
@@ -565,7 +764,19 @@ class Client
     /**
      * Get Devex positions data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>Include positions open on this date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexPositions($params = [])
@@ -576,7 +787,21 @@ class Client
     /**
      * Get Devex trades data.
      *
-     * @param $params
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>instrument</dt>
+     *     <dd>The instruments to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
      * @return array|object
      */
     public function devexTrades($params = [])
@@ -587,7 +812,7 @@ class Client
     /**
      * Get the clients data.
      *
-     * @param $params
+     * @param $params - there are no parameters for this API.
      * @return array|object
      */
     public function clients($params = [])
@@ -598,7 +823,7 @@ class Client
     /**
      * Get the platform users data.
      *
-     * @param $params
+     * @param $params - there are no parameters for this API.
      * @return array|object
      */
     public function platformUsers($params = [])
@@ -609,7 +834,7 @@ class Client
     /**
      * Get the platform accounts data.
      *
-     * @param $params
+     * @param $params - there are no parameters for this API.
      * @return array|object
      */
     public function platformAccounts($params = [])

@@ -59,6 +59,11 @@ $results = $client->devexTrades([
  - `iressNetBalances` - Get Iress net / ios balances  data.
  - `iressPositions` - Get Iress positions data.
  - `iressTrades` - Get Iress trades data.
+ - `mt5Positions` - Get MT5 positions data.
+ - `mt5Trades` - Get MT5 trades data.
+ - `mt5MoneyFlow` - Get MT5 money flow data.
+ - `mt5MoneyFlowTotals` - Get MT5 money flow totals data.
+ - `mt5Transactions` - Get MT5 commissions data.
  - `devexCommissions` - Get the Devex commissions data.
  - `devexFinancing` - Get the Devex financing data.
  - `devexInterest` - Get the Devex interest data.

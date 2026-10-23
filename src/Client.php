@@ -26,7 +26,9 @@ class Client
 
     private function login(array $options): void
     {
+        $headers = ['Accept' => 'application/json'];
         $url = $this->getUrl('login');
+        $request = new GuzzleRequest('POST', $url, $headers);
 
         $options = [
             'form_params' => [
@@ -35,7 +37,7 @@ class Client
             ],
         ];
 
-        $response = $this->guzzle->request('POST', $url, $options);
+        $response = $this->guzzle->send($request, $options);
         $response = json_decode($response->getBody());
 
         if ($response->result == 'error') {
@@ -515,6 +517,129 @@ class Client
     public function iressTrades($params = [])
     {
         return $this->apiRequest('iress/trades', $params);
+    }
+
+    /**
+     * Get MT5 positions data.
+     *
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>date (required)</dt>
+     *     <dd>Include positions open on this date.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
+     * @return array|object
+     */
+    public function mt5Positions($params = [])
+    {
+        return $this->apiRequest('mt5/positions', $params);
+    }
+
+    /**
+     * Get MT5 trades data.
+     *
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     *     <dt>destinations</dt>
+     *     <dd>The destinations to include (array or comma separated string).</dd>
+     *     <dt>counterparties</dt>
+     *     <dd>The counterparties to include (array or comma separated string).</dd>
+     * </dl>
+     * @return array|object
+     */
+    public function mt5Trades($params = [])
+    {
+        return $this->apiRequest('mt5/trades', $params);
+    }
+
+    /**
+     * Get MT5 money flow data.
+     *
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
+     * @return array|object
+     */
+    public function mt5MoneyFlow($params = [])
+    {
+        return $this->apiRequest('mt5/moneyflow', $params);
+    }
+
+    /**
+     * Get MT5 money flow totals data.
+     *
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from (required)</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to (required)</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     * </dl>
+     * @return array|object
+     */
+    public function mt5MoneyFlowTotals($params = [])
+    {
+        return $this->apiRequest('mt5/moneyflow/totals', $params);
+    }
+
+    /**
+     * Get MT5 transactions data.
+     *
+     * @param $params array An array of API request parameters.
+     * <dl>
+     *     <dt>from</dt>
+     *     <dd>The start of the date range.</dd>
+     *     <dt>to</dt>
+     *     <dd>The end of the date range.</dd>
+     *     <dt>currency</dt>
+     *     <dd>The currencies to include (array or comma separated string).</dd>
+     *     <dt>accounts</dt>
+     *     <dd>The accounts to include (array or comma separated string).</dd>
+     *     <dt>clients</dt>
+     *     <dd>The clients to include (array or comma separated string).</dd>
+     *     <dt>search</dt>
+     *     <dd>A search string to match against instruments and exchanges.</dd>
+     * </dl>
+     * @return array|object
+     */
+    public function mt5Transactions($params = [])
+    {
+        return $this->apiRequest('mt5/transactions', $params);
     }
 
     /**
